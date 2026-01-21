@@ -1,4 +1,4 @@
-.PHONY: build package-install clean
+.PHONY: build package-install clean lint
 
 build:
 	uv build
@@ -8,3 +8,6 @@ package-install:
 
 clean:
 	rm -rf dist/ build/ *.egg-info/
+
+lint:
+	uv run ruff check brain_games

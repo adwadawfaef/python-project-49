@@ -14,3 +14,7 @@ def generate_question_and_answer():
     number = random.randint(MIN_NUMBER, MAX_NUMBER)
     correct_answer = "yes" if is_even(number) else "no"
     return number, correct_answer
+
+
+def run_game(brain_calc):
+    return None

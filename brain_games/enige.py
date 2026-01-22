@@ -4,18 +4,9 @@ ROUNDS_COUNT = 3
 
 
 def run_game(game_module):
-    """
-    Запускает любую игру.
-
-    Args:
-        game_module: модуль игры, содержащий:
-            - DESCRIPTION: описание правил
-            - generate_question_and_answer(): функция генерации вопроса и ответа
-    """
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
     print(f"Hello, {name}!")
-
     print(game_module.DESCRIPTION)
 
     for _ in range(ROUNDS_COUNT):

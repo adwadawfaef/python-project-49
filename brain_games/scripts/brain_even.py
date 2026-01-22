@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 """Запуск игры «Проверка на чётность»."""
 
-from brain_games.games import brain_even
 from brain_games import enige
+from brain_games.games import even
 
 
 def main():
-    """Точка входа."""
-    enige.run_game(brain_even)
+    enige.run_game(even)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

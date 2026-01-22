@@ -11,27 +11,12 @@ MAX_STEP = 10
 
 
 def generate_progression(start, step, length):
-    """
-    Генерирует арифметическую прогрессию.
 
-    Args:
-        start: первое число прогрессии
-        step: шаг прогрессии
-        length: длина прогрессии
-
-    Returns:
-        Список чисел прогрессии
-    """
     return [start + i * step for i in range(length)]
 
 
 def generate_question_and_answer():
-    """
-    Генерирует прогрессию с одним скрытым элементом.
 
-    Returns:
-        Кортеж (вопрос, правильный_ответ)
-    """
     length = random.randint(MIN_LENGTH, MAX_LENGTH)
     start = random.randint(MIN_START, MAX_START)
     step = random.randint(MIN_STEP, MAX_STEP)
@@ -39,13 +24,10 @@ def generate_question_and_answer():
 
     progression = generate_progression(start, step, length)
 
-    # Запоминаем скрытое число
     hidden_number = progression[hidden_index]
 
-    # Заменяем скрытое число на ".."
     progression[hidden_index] = '..'
 
-    # Формируем вопрос
     question = ' '.join(map(str, progression))
 
     return question, hidden_number

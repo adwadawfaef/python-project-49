@@ -1,5 +1,5 @@
-import random
 import math
+import random
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
@@ -8,7 +8,6 @@ MAX_NUMBER = 100
 
 
 def generate_question_and_answer():
-
     num1 = random.randint(MIN_NUMBER, MAX_NUMBER)
     num2 = random.randint(MIN_NUMBER, MAX_NUMBER)
 

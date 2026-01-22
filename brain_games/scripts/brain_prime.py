@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
+"""Запуск игры «Простое ли число?»."""
 
+from brain_games import engine
 from brain_games.games import prime
-from brain_games import enige
 
 
 def main():
-    enige.run_game(prime)
+    engine.run_game(prime)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
